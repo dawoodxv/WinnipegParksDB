@@ -20,7 +20,7 @@ The project includes the following files:
    make run
    ```
 2. **Populate the Database:**
-   - The database is initially populated into the project.db file.
+   - The database is initially populated into the data.db file.
    - The database can be cleared by running the `delete` command in the CLI, and populated by running the `init` command. But initializing like this may take a significant amount of time.
    - Alternatively, you can use SQLite3 commands for much faster initialization (populating):
    ```bash

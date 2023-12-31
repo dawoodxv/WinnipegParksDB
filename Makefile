@@ -1,10 +1,9 @@
-.PHONY := build
+.PHONY: build run
 
+DatabaseApp.class: DatabaseApp.java
+	javac DatabaseApp.java
 
-project.class: project.java 
-	javac project.java
-
-build: project.class 
+build: DatabaseApp.class
 
 run: build
-	java -cp .:sqlite-jdbc-3.39.3.0.jar project
+	java -cp .:sqlite-jdbc-3.39.3.0.jar DatabaseApp

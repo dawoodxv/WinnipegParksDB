@@ -6,9 +6,9 @@ This project involves a Trees Database that allows users to perform various quer
 
 The project includes the following files:
 
-- **project.java**: The Java source code for the command-line interface and queries methods.
-- **project.sql**: SQL file containing all 'INSERT' commands to populate the database.
-- **project.db**: The initial database file populated with all the data.
+- **DatabaseApp.java**: The Java source code for the command-line interface and queries methods.
+- **initialData.sql**: SQL file containing all 'INSERT' commands to populate the database.
+- **data.db**: The initial database file populated with all the data.
 - **makefile**: A makefile for building and running the project/Command Line Interface.
 - **mapping.py**: Sample python script for merging multiple CSV files according to the required mapping.
 - **csvToSql.py**: Sample python script for converting CSV files to 'INSERT' SQL commands.
@@ -25,14 +25,10 @@ The project includes the following files:
    - Alternatively, you can use SQLite3 commands for much faster initialization (populating):
    ```bash
    sqlite3
-   .read project.sql
+   .read initialData.sql
    .save <someName>.db
    .exit
    ```
-
-- init command on my local machine took 3 minutes but on aviary took 50 minutes. 
-- Adding thriugh sqlite3 took 2 seconds on both.
-- To avoid accidently deleting the database, we would suggest creating a copy of the database and then deleteing/initializing that one. The db file can be changed at line 413 of project.java
 
 # Usage Instructions
 
